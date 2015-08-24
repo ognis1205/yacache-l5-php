@@ -1,0 +1,46 @@
+{
+    "name": "sokawa/yacache",
+    "description": "Yet Another Laravel Cache Implementation.",
+    "minimum-stability": "dev",
+    "keywords": [
+	"nosql",
+	"yacache",
+	"redis",
+	"predis",
+	"laravel"
+    ],
+    "authors": [
+	{
+	    "name": "Shingo OKAWA",
+	    "email": "shingo.okawa.n.a@gmail.com"
+	}
+    ],
+    "require": {
+	"clue/redis-protocol": "0.3.*",
+	"hannesvdvreken/msgpack": "dev-master",
+	"laravel/framework": "~5.1",
+	"nesbot/carbon": "~1.14",
+	"orchestra/testbench": "~3.0",
+	"php": ">=5.4.0",
+	"predis/predis": "~1.0",
+        "react/event-loop": "0.4.*"
+    },
+    "require-dev": {
+	"laravel/framework": "~5.0",
+	"phpunit/phpunit": "~4.0"
+    },
+    "suggest": {
+	"ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+    },
+    "autoload": {
+	"psr-4": {
+	    "Illuminate\\YetAnother\\": "src/main/",
+	}
+    },
+    "autoload-dev": {
+	"psr-4": {
+	    "Illuminate\\YetAnother\\": "src/main/",
+	    "Illuminate\\YetAnother\\Tests\\": "src/tests/",
+	}
+    }
+}
