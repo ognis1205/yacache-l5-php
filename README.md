@@ -2,22 +2,26 @@
 
 Yet Another Laravel Caching, a.k.a., YACache is a package to extend Laravel 5's base caching
 functionality.
-
 This yet another chaching service implementation enables full support of Eloquent ORM caching,
 i.e., you can cache Eloquent models without loss of relationship imformations.
 
 ## Installation
 
-Run the following shell script:
+First, you must run the following script to install the PECL msgpack package:
 
-    $ ./composer.sh
+    $./install.sh
+
+Then, install the package via composer:
+
+    $./composer.sh
 
 ## Usage
 
-Just use "yet another" packages where you use corresponding default implementations, e.g.:
+First, add the yet another caching service provider and facade to your config/app.php file:
 
-    use Illuminate\YetAnother\Support\Facades;
+    "Illuminate\YetAnother\Cache\CacheServiceProvider",
+    "Illuminate\YetAnother\Support\Facades\Cache"
 
-instead of:
-
-    use Illuminate\Support\Facades;
+It's important to note that this cachin service will automatically re-bind the Model
+class that Eloquent uses for many-to-many relationships. You should now be good to go with
+your models.
