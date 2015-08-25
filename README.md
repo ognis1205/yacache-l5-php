@@ -7,13 +7,14 @@ i.e., you can cache Eloquent models without loss of relationship imformations.
 
 ## Installation
 
-First, you must run the following script to install the PECL msgpack package:
+First, install the package via composer, or autoloading it configuring your composer.json:
 
-    $./install.sh
+    $ composer require kirkbushell/eloquence
 
-Then, install the package via composer:
+Second, if you wan to use msgpack instead of default PHP serializer, you must run the following
+script in the installed package directory to install the PECL msgpack package:
 
-    $./composer.sh
+    $ ./install.sh
 
 ## Usage
 
