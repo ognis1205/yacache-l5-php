@@ -9,7 +9,7 @@ i.e., you can cache Eloquent models without loss of relationship imformations.
 
 First, install the package via composer, or autoloading it configuring your composer.json:
 
-    $ composer require kirkbushell/eloquence
+    $ composer require sokawa/yacache
 
 Second, if you wan to use msgpack instead of default PHP serializer, you must run the following
 script in the installed package directory to install the PECL msgpack package:
